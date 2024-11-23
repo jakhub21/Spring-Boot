@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Lista osób</h1>
+    <ul>
+        <li th:each="person, indexStat : ${people}">
+            <a th:href="@{/people/{index}(index=${indexStat.index})}"
+               th:text="${person.firstName + ' ' + person.familyName}"></a>
+        </li>
+    </ul>
+    <a href="/people/add">Dodaj osobę</a>
+</body>
+</html>

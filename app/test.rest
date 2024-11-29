@@ -1,0 +1,6 @@
+PATCH http://localhost:8080/api/weather-data/2
+Content-Type: application/json
+
+{
+  "temperature": 6.5
+}
